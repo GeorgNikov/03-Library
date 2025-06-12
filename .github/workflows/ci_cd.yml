@@ -24,8 +24,8 @@ jobs:
       run: npm install
     - name: Install Playwright Browser
       run: npx playwright install
-    - name: Change the backend to localhost
-      run: echo "export const settings = {host:\"https://library-books-61yn.onrender.com\"}" > src/config.js
+    # - name: Change the backend to localhost
+    #   run: echo "export const settings = {host:\"https://library-books-61yn.onrender.com\"}" > src/config.js
     - name: Start the Back-End
       run: npm run server &
     - name: Start Front-End
